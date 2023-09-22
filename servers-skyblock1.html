@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<!--
+  Name: Youplay - Game Template based on Bootstrap
+  Modified By Skypixel Server (PAID)
+-->
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>SkyPixel像素天空 - 服务器特色&介绍</title>
+
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <!-- Icon -->
+  
+  <!-- Google Fonts -->
+
+  <link href='static/css/css-Lato300400700.css' rel='stylesheet' type='text/css'>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" type="text/css" href="static/css/font-awesome.min.css">
+
+  <!-- Owl Carousel -->
+  <link rel="stylesheet" type="text/css" href="static/css/owl.carousel.min.css">
+
+  <!-- Magnific Popup -->
+  <link rel="stylesheet" type="text/css" href="static/css/magnific-popup.css">
+
+  <!-- Revolution Slider -->
+  <link rel="stylesheet" type="text/css" href="static/css/settings">
+
+  <!-- Bootstrap Sweetalert -->
+  <link rel="stylesheet" type="text/css" href="static/css/sweet-alert.css">
+
+  <!-- Social Likes -->
+  <link rel="stylesheet" type="text/css" href="static/css/social-likes_flat.css">
+  <!-- Youplay -->
+
+  <link rel="stylesheet" type="text/css" href="static/css/youplay.min.css">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" type="text/css" href="static/css/custom.css">
+  <!-- RTL (uncomment this to enable RTL support) -->
+  <!-- <link rel="stylesheet" type="text/css" href="static/css/youplay-rtl.css" /> -->
+
+
+  <!-- Google Maps API -->
+</head>
+
+
+<body>
+
+
+      <style>
+	  .alert {
+		  padding: 20px;
+		  color: white;
+		  
+		  }
+
+		  .closebtn {
+			  margin-left: 15px;
+			  color: white;
+			  font-weight: bold;
+			  float: right;
+			  font-size: 22px;
+			  line-height: 20px;
+			  cursor: pointer;
+			  transition: 0.3s;
+			  }
+
+			  .closebtn:hover {
+				  color: black;
+				  }
+	</style>
+  <!-- Navbar -->
+  <nav class="navbar-youplay navbar navbar-default navbar-fixed-top ">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="off-canvas" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          <img src="static/picture/logo.png" alt="">
+        </a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+        <li class="dropdown dropdown-hover">            <a href="index.html" class="dropdown-toggle" role="button" aria-expanded="false">
+                      主页 <span class="label">网站主页~</span>
+                    </a>
+          </li>
+           <li class="dropdown dropdown-hover">            <a href="announcement.html" class="dropdown-toggle" role="button" aria-expanded="false">
+                      服务器公告 <span class="label">重要信息~</span>
+                    </a>
+          </li>
+          <li class="dropdown dropdown-hover">            <a href="#!" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                      服务器特色 <span class="caret"></span> <span class="label">子服详情~</span>
+                    </a>
+            <div class="dropdown-menu">
+              <ul role="menu">
+                <li><a href="servers-survival.html">生存1区</a>
+                </li>
+                <li><a href="">空岛生存</a>
+                </li>
+                <li><a href="servers-rpgpvp.html">RPG 国战</a>
+                </li>
+                <li><a href="servers-rpggun.html">RPG 维护者</a>
+                </li>
+                <li><a href="servers-endoftheworld.html">末日生存</a>
+                </li>
+                <li><a href="servers-jailsurvival.html">监狱风云</a>
+                </li>
+              </ul>
+              <ul role="menu">
+              <li><a href="joinus.html">加入我们</a>
+                </li>
+              </ul>
+              <ul role="menu">
+                
+                <li><a href="servers-skdowar.html">起床战争</a>
+                </li>
+                <li><a href="servers-eggwar.html">空岛战争</a>
+                </li>
+                <li><a href="servers-jailsurvival.html">饥饿战争</a>
+                </li>
+                <li><a href="servers-sbwar.html">冲击战争</a>
+                </li>
+                <li><a href="servers-tntrun.html">TNTRUN</a>
+                </li>
+                <li><a href="servers-creative.html">建筑创造</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="dropdown dropdown-hover">            <a href="login_ext.html" class="dropdown-toggle" role="button" aria-expanded="false">
+                      服务器捐赠 <span class="label">维护需要~</span>
+                    </a>
+          </li>
+          <li class="dropdown dropdown-hover">            <a href="index1.html" class="dropdown-toggle" role="button" aria-expanded="false">
+                      帮助中心 <span class="label">解决问题~</span>
+                    </a>
+          </li>
+          <li class="dropdown dropdown-hover">
+          <a href="javascript:;" class="dropdown-toggle" role="button" aria-expanded="false">
+                      服务器论坛 <span class="label">问题提交~</span>
+                    </a>
+          </li>
+         </ul>
+        <ul class="nav navbar-nav navbar-right">
+        
+		 <li class="dropdown dropdown-hover">
+            <a href="#!" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                      玩家中心 <span class="caret"></span> <span class="label">登录/注册</span>
+                    </a>
+            <div class="dropdown-menu">
+              <ul role="menu">
+               	<li><a href="index2.html">登录</a>
+                </li>
+                <li><a href="joinus.html">注册</a>
+                </li>               </ul>
+            </div>
+          </li>
+          <li class="dropdown dropdown-hover dropdown-cart">
+            <a href="#!" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+              <i class="glyphicon glyphicon-globe"></i>
+            </a>
+            <div class="dropdown-menu" style="width: 300px;">
+              <div class="row youplay-side-news">
+                <div class="col-xs-3 col-md-4">
+                  <a href="#" class="angled-img">
+                    <div class="img">
+
+                      <img src="static/picture/cn.png" alt="">
+                    </div>
+                  </a>
+                </div>
+                <div class="col-xs-9 col-md-8">
+                  <h4 class="ellipsis"><a id="translateLink" href="javascript:translatePage();">中文繁体</a></h4>
+                  <span class="quantity">CHN</span>
+                </div>
+              </div>
+
+              <div class="row youplay-side-news">
+                <div class="col-xs-3 col-md-4">
+                  <a href="#" class="angled-img">
+                    <div class="img">
+
+                      <img src="static/picture/us.png" alt="">
+                    </div>
+                  </a>
+                </div>
+                <div class="col-xs-9 col-md-8">
+                  <h4 class="ellipsis"><a href="en.html">ENG</a></h4>
+                  <span class="quantity">英语</span>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+  </nav>
+  <!-- /Navbar -->
+
+
+  <!-- Main Content -->
+  <section class="content-wrap">
+
+    <!-- Banner -->
+    <div class="youplay-banner banner-top youplay-banner-parallax small">
+      <div class="image" style="background-image: url('static/image/banner-blog-bakg.jpg')">
+      </div>
+
+      <div class="info">
+        <div>
+          <div class="container">
+            <h1>SkyPixel服务器特色</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Banner -->
+
+
+    <div class="container youplay-content">
+      <h2 class="mt-0">SkyPixel服务器</h2>
+      <p>
+        SkyPixel是一个大型群组服务器,主打生存类服务器,并包含很多时下流行的我的世界游戏玩法,例如纯净生存,空岛生存,RPG类型服务器,监狱风云等等。
+      </p>
+      <p>
+        不仅仅这些,SkyPixel还有许多小游戏服务器,有SkyPixel自主开发的冲击战争,还有时下流行的龙蛋战争小游戏等等。
+      </p>    </div>
+
+    <!-- Footer -->
+<footer class="youplay-footer-parallax">
+<script type="text/javascript" src="static/js/tw_cn.js"></script>
+<script type="text/javascript">
+  var defaultEncoding = 2; //网站编写字体是否繁体，1-繁体，2-简体
+  var translateDelay = 0; //延迟时间,若不在前, 要设定延迟翻译时间, 如100表示100ms,默认为0
+  var cookieDomain = "https://www.skpx.me/"; //Cookie地址, 一定要设定, 通常为你的网址
+  var msgToTraditionalChinese = "中文繁體"; //此处可以更改为你想要显示的文字
+  var msgToSimplifiedChinese = "中文简体"; //同上，但两处均不建议更改
+  var translateButtonId = "translateLink"; //默认互换id
+  translateInitilization();
+</script>
+<link rel="stylesheet" href="static/css/all.min.css">
+<div class="wrapper" style="background-image:url('static/image/banner-bakg.jpg')">
+<div class="social">
+<div class="container">
+<h3>查看<strong>我们</strong>的公众账号</h3>
+<div class="social-icons">
+<div class="social-icon">
+<a href="#!">
+<i class="fab fa-weibo"></i>
+<span>在新浪微博上找到我们</span>
+</a>
+</div>
+<div class="social-icon">
+<a href='javascript:;'>
+<i class="fab fa-qq"></i>
+<span>加入我们的官方QQ群</span>
+</a>
+</div>
+<div class="social-icon">
+<a href="javascript:;">
+<i class="fab fa-discord"></i>
+<span>加入我们官方Discord</span>
+</a>
+</div>
+<div class="social-icon">
+<a href="#!">
+<i class="fa fa-play"></i>
+<span>在优酷上找到我们</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="copyright">
+<div class="container">
+友情链接:
+<a href="javascript:;" target="_blank">最MC</a>
+<a href="javascript:;" target="_blank">格兰蒂协会</a>
+<a href="javascript:;" target="_blank">Mc部落</a>
+<!-- <a href="https://www.i8mc.cn" target="_blank"><img height="31" width="88" src="./CDiK6kw7p6M46RpFlVRT.png" alt="CDiK6kw7p6M46RpFlVRT.png" title="CDiK6kw7p6M46RpFlVRT.png" /></a>--><!-- Automated remove, Reason: Didn't found "www.skpx.me" in website => www.i8mc.cn -->
+<br>
+<strong>SkyPixel Networks</strong> &copy; 2015-2020. All rights reserved
+</div>
+</div>
+</div>
+</footer>    <!-- /Footer -->
+
+
+  </section>
+  <!-- /Main Content -->
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="static/js/jquery.min.js"></script>
+
+  <!-- Hexagon Progress -->
+  <script type="text/javascript" src="static/js/jquery.hexagonprogress.min.js"></script>
+
+
+  <!-- Bootstrap -->
+  <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+
+  <!-- Jarallax -->
+  <script type="text/javascript" src="static/js/jarallax.min.js"></script>
+
+  <!-- Smooth Scroll -->
+  <script type="text/javascript" src="static/js/SmoothScroll.js"></script>
+
+  <!-- Owl Carousel -->
+  <script type="text/javascript" src="static/js/owl.carousel.min.js"></script>
+
+  <!-- Countdown -->
+  <script type="text/javascript" src="static/js/jquery.countdown.min.js"></script>
+
+  <!-- Moment.js -->
+  <script type="text/javascript" src="static/js/moment.min.js"></script>
+  <script type="text/javascript" src="static/js/moment-timezone-with-data.min.js"></script>
+
+  <!-- Magnific Popup -->
+  <script type="text/javascript" src="static/js/jquery.magnific-popup.min.js"></script>
+
+  <!-- Revolution Slider -->
+  <script type="text/javascript" src="static/js/jquery.themepunch.tools.min.js"></script>
+  <script type="text/javascript" src="static/js/jquery.themepunch.revolution.min.js"></script>
+
+  <!-- ImagesLoaded -->
+  <script type="text/javascript" src="static/js/imagesloaded.pkgd.min.js"></script>
+
+  <!-- Isotope -->
+  <script type="text/javascript" src="static/js/isotope.pkgd.min.js"></script>
+
+  <!-- Bootstrap Validator -->
+  <script type="text/javascript" src="static/js/validator.min.js"></script>
+
+  <!-- Bootstrap Sweetalert -->
+  <script type="text/javascript" src="static/js/sweet-alert.min.js"></script>
+
+  <!-- Social Likes -->
+  <script type="text/javascript" src="static/js/social-likes.min.js"></script>
+  <!-- Youplay -->
+  <script type="text/javascript" src="static/js/youplay.min.js"></script>
+
+  <!-- init youplay -->
+  <script>
+    if(typeof youplay !== 'undefined') {
+        youplay.init({
+            // enable parallax
+            parallax:         true,
+    
+            // set small navbar on load
+            navbarSmall:      false,
+    
+            // enable fade effect between pages
+            fadeBetweenPages: true,
+    
+            // twitter and instagram php paths
+            php: {
+                twitter: './php/twitter/tweet.php',
+                instagram: './php/instagram/instagram.php'
+            }
+        });
+    }
+  </script>
+
+
+</body>
+
+</html>
