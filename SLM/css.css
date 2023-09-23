@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+html {
+	height: 100%;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Microsoft Yahei;
+	-webkit-touch-callout: none;
+	-moz-touch-callout: none;
+	-ms-touch-callout: none;
+	touch-callout: none;
+	-ms-content-zooming: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+/* 字体 */
+@font-face {
+	font-family: 'Minecraft';
+	src: url('../fonts/MinecraftEn.ttf');
+}
