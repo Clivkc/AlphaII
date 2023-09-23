@@ -1,0 +1,165 @@
+@charset "utf-8";
+/* CSS Document */
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+
+.data {
+	-webkit-user-select: text;
+	font-size: 14px;
+	height: 37px;
+	float: left;
+	text-align: center;
+	border: none;
+	margin: 6px;
+	box-shadow: 0px 0px 6px #000000;
+	color: #44e81d;
+	font-size: 20px;
+	font-weight: 700;
+	outline: none;
+}
+
+.data::-webkit-input-placeholder {
+	/* WebKit browsers */
+	color: #E6E6E6;
+}
+
+.data:-moz-placeholder {
+	/* Mozilla Firefox 4 to 18 */
+	color: #E6E6E6;
+}
+
+.data::-moz-placeholder {
+	/* Mozilla Firefox 19+ */
+	color: #E6E6E6;
+}
+
+.data:-ms-input-placeholder {
+	/* Internet Explorer 10+ */
+	color: #E6E6E6;
+}
+
+#seed {
+	background: url(../img/input_long.png) no-repeat;
+	background-size: 100% 100%;
+	width: 400px;
+	height: 52px;
+	border-right: 0px;
+}
+
+#x3 {
+	background: url(../img/input.png) no-repeat;
+	background-size: 100% 100%;
+	width: 150px;
+	height: 52px;
+}
+
+#z3 {
+	background: url(../img/input.png) no-repeat;
+	background-size: 100% 100%;
+	width: 150px;
+	height: 52px;
+}
+
+#ok {
+	background: url(../img/button.png) no-repeat;
+	background-size: 100% 100%;
+	width: 28px;
+	height: 28px;
+	padding: 12px 36px;
+}
+
+#ok:active {
+	background: url(../img/button_click.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+#value {
+	margin: 20px auto;
+	font-size: 30px;
+}
+
+.zuobiao {
+	font-size: 10px;
+	width: 20px;
+	height: 20px;
+}
+
+.zuobiaoY {
+	border-bottom-color: rgba(0, 0, 0, 0);
+	padding-right: 1px;
+	text-align: right;
+	border-right-width: 0px;
+}
+
+#lastz{
+	border-right-width: 1px;
+}
+
+.zuobiaoX {
+	border-bottom-color: rgba(0, 0, 0, 0);
+	padding-right: 1px;
+	text-align: left;
+	border-bottom-width: 0px;
+}
+
+.zuobiaoYShow {
+	visibility: visible;
+	border-bottom-color: rgb(128, 128, 128);
+}
+
+.lll {
+	line-height: 16px;
+}
+
+.vv {
+	width: 21px;
+	height: 21px;
+	border-width: 1px 0px 0px 1px;
+}
+
+.rv {
+	border-right-width: 1px;
+}
+
+.bv {
+	border-bottom-width: 1px;
+}
+
+.tv {
+	background: #00FF00;
+}
+
+.fv {
+	background: #999999;
+}
+
+.core {
+	border-width: 1px;
+	border-color: #1151ef;
+	width: 20px;
+	height: 20px;
+}
+
+.select {
+	border-width: 1px;
+	border-color: red;
+	width: 20px;
+	height: 20px;
+}
+
+.tip {
+	color: red;
+}
+
+.banner {
+	max-height: 100px;
+}
+
+#dataBar {
+	background: url(../img/input_bg.png) no-repeat;
+	background-size: 100% 100%;
+	padding: 0px;
+	box-shadow: 0px 0px 6px #000000;
+	display: inline-block;
+}
